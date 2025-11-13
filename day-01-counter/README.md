@@ -1,6 +1,6 @@
 # Gün 01 – Sayaç Uygulaması (Counter App)
 
-Bu proje, **30 Days / 30 JavaScript Projects** serimin 1. gün projesidir.  
+Bu proje, **30 Gün / 30 JavaScript Projects** serimin 1. gün projesidir.  
 Amaç: JavaScript ile temel DOM manipülasyonu, event listener kullanımı ve basit animasyon mantığını hatırlamak.
 
 ---

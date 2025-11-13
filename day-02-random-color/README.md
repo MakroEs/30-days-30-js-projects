@@ -1,6 +1,6 @@
 # Gün 02 – Rastgele Renk Üretici (Random Color Generator)
 
-Bu proje, **30 Days / 30 JavaScript Projects** serimin 2. gün projesidir.  
+Bu proje, **30 Gün / 30 JavaScript Projects** serimin 2. gün projesidir.  
 Amaç: JavaScript ile rastgele HEX renk üretmeyi, DOM üzerinden stil değiştirmeyi ve animasyon eklemeyi öğrenmek.
 
 ---
@@ -22,7 +22,7 @@ Proje tamamen **HTML + CSS + JavaScript** ile geliştirilmiştir.
 
 Aşağıdaki görsel `assets` klasöründe yer almaktadır:
 
-![Ekran Görüntüsü](./assets/screenshot.png)
+![Ekran Görüntüsü](./assets/image.png)
 
 ---
 
