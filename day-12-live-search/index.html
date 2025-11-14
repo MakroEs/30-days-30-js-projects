@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 12 - Canlı Arama Filtresi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 12 - Canlı Arama Filtresi 🔍</h1>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Bir şeyler yaz... (ör: javascript, react, vue)"
+        />
+        <p id="result-info" class="result-info">Toplam 8 kayıt</p>
+      </div>
+
+      <ul id="items-list" class="items-list">
+        <li class="item" data-label="JavaScript Temelleri">
+          JavaScript Temelleri
+        </li>
+        <li class="item" data-label="Modern React Geliştirme">
+          Modern React Geliştirme
+        </li>
+        <li class="item" data-label="Vue.js ile SPA Uygulamaları">
+          Vue.js ile SPA Uygulamaları
+        </li>
+        <li class="item" data-label="Node.js ile Backend Geliştirme">
+          Node.js ile Backend Geliştirme
+        </li>
+        <li class="item" data-label="TypeScript ile Tip Güvenliği">
+          TypeScript ile Tip Güvenliği
+        </li>
+        <li class="item" data-label="CSS ile Modern Arayüz Tasarımı">
+          CSS ile Modern Arayüz Tasarımı
+        </li>
+        <li class="item" data-label="Next.js ile Fullstack Projeler">
+          Next.js ile Fullstack Projeler
+        </li>
+        <li class="item" data-label="Git ve GitHub Versiyon Kontrolü">
+          Git ve GitHub Versiyon Kontrolü
+        </li>
+      </ul>
+
+      <p id="no-result" class="no-result hidden">
+        Eşleşen sonuç bulunamadı. 😕
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

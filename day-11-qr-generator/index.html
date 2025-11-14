@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 11 - QR Kod Üretici</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 11 - QR Kod Üretici 📱</h1>
+
+      <div class="qr-box">
+        <input
+          type="text"
+          id="qr-input"
+          class="qr-input"
+          placeholder="Metin veya URL girin..."
+        />
+        <button id="generate-btn" class="generate-btn">QR Oluştur</button>
+
+        <p id="message" class="message"></p>
+
+        <div id="qr-result" class="qr-result hidden">
+          <img id="qr-image" class="qr-image" src="" alt="QR Kod" />
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

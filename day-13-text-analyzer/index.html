@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 13 - Metin Analiz Aracı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 13 - Metin Analiz Aracı ✍️</h1>
+
+      <div class="analyzer-box">
+        <textarea
+          id="text-input"
+          class="text-input"
+          rows="6"
+          placeholder="Metni buraya yaz veya yapıştır..."
+        ></textarea>
+
+        <div class="buttons-row">
+          <button id="clear-btn" class="btn clear-btn">Temizle</button>
+          <button id="copy-btn" class="btn copy-btn">Metni Kopyala</button>
+        </div>
+
+        <p id="message" class="message"></p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Karakter (boşluklu)</span>
+            <span id="char-count" class="stat-value">0</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-label">Karakter (boşluksuz)</span>
+            <span id="char-nospace-count" class="stat-value">0</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-label">Kelime sayısı</span>
+            <span id="word-count" class="stat-value">0</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-label">Cümle sayısı</span>
+            <span id="sentence-count" class="stat-value">0</span>
+          </div>
+
+          <div class="stat-card wide">
+            <span class="stat-label">Tahmini okuma süresi</span>
+            <span id="reading-time" class="stat-value">0 sn</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

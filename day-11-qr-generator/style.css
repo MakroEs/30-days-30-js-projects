@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #06b6d4, #020617);
+  color: #e5e7eb;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.qr-box {
+  background: rgba(15, 23, 42, 0.95);
+  padding: 26px 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  width: 360px;
+}
+
+.qr-input {
+  width: 100%;
+  padding: 10px;
+  background: #020617;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  color: #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.generate-btn:hover {
+  background: #2563eb;
+}
+
+.message {
+  font-size: 13px;
+  color: #fca5a5;
+  min-height: 20px;
+}
+
+.qr-result {
+  margin-top: 16px;
+}
+
+.qr-image {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.hidden {
+  display: none;
+}

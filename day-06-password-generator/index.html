@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 06 - Şifre Üretici</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 06 - Şifre Üretici 🔐</h1>
+
+      <div class="generator-box">
+        <!-- Üretilen şifre alanı -->
+        <div class="output-row">
+          <input
+            type="text"
+            id="password-output"
+            class="password-output"
+            placeholder="Önce bir şifre üret..."
+            readonly
+          />
+          <button id="copy-btn" class="copy-btn">Kopyala</button>
+        </div>
+
+        <!-- Ayarlar -->
+        <div class="settings">
+          <div class="setting">
+            <label for="length-range"
+              >Uzunluk: <span id="length-value">12</span></label
+            >
+            <input type="range" id="length-range" min="4" max="32" value="12" />
+          </div>
+
+          <div class="setting">
+            <label>
+              <input type="checkbox" id="lowercase-checkbox" checked />
+              Küçük harf (a-z)
+            </label>
+          </div>
+
+          <div class="setting">
+            <label>
+              <input type="checkbox" id="uppercase-checkbox" checked />
+              Büyük harf (A-Z)
+            </label>
+          </div>
+
+          <div class="setting">
+            <label>
+              <input type="checkbox" id="numbers-checkbox" checked />
+              Sayılar (0-9)
+            </label>
+          </div>
+
+          <div class="setting">
+            <label>
+              <input type="checkbox" id="symbols-checkbox" />
+              Semboller (!@#$%)
+            </label>
+          </div>
+        </div>
+
+        <!-- Üret butonu -->
+        <button id="generate-btn" class="generate-btn">Şifre Üret</button>
+
+        <p id="message" class="message"></p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 08 - Resim Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 08 - Resim Slider 📸</h1>
+
+      <div class="slider">
+        <button id="prev-btn" class="nav-btn prev-btn" aria-label="Önceki">
+          ‹
+        </button>
+
+        <div class="slide">
+          <img
+            id="slide-image"
+            class="slide-image"
+            src=""
+            alt="Slider görseli"
+          />
+          <div class="slide-caption">
+            <h2 id="slide-title"></h2>
+            <p id="slide-description"></p>
+          </div>
+        </div>
+
+        <button id="next-btn" class="nav-btn next-btn" aria-label="Sonraki">
+          ›
+        </button>
+      </div>
+
+      <div id="dots-container" class="dots-container"></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
