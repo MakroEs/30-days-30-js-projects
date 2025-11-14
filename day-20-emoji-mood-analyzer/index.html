@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 20 - Emoji Mood Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 20 - Emoji Duygu Analizi 😊</h1>
+
+      <div class="card">
+        <label for="mood-input" class="label">Bugün nasılsın?</label>
+        <textarea
+          id="mood-input"
+          placeholder="Örn: Bugün çok mutluyum!"
+        ></textarea>
+
+        <button id="analyze-btn" class="analyze-btn">Analiz Et</button>
+
+        <p id="message" class="message"></p>
+
+        <div class="result-card">
+          <div class="emoji" id="emoji">🤔</div>
+          <h3 class="status" id="status">Henüz analiz edilmedi</h3>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

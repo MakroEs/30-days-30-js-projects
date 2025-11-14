@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 16 - Bahşiş Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Day 16 - Bahşiş Hesaplayıcı 💸</h1>
+
+      <div class="card">
+        <div class="input-group">
+          <label for="bill-amount">Hesap Tutarı (₺)</label>
+          <input
+            type="number"
+            id="bill-amount"
+            placeholder="Örn: 250"
+            min="0"
+            step="0.01"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="tip-percent">Bahşiş Oranı (%)</label>
+          <input
+            type="number"
+            id="tip-percent"
+            placeholder="Örn: 10"
+            min="0"
+            max="100"
+            step="1"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="people-count">Kişi Sayısı</label>
+          <input
+            type="number"
+            id="people-count"
+            placeholder="Örn: 2"
+            min="1"
+            step="1"
+          />
+        </div>
+
+        <button id="calculate-btn" class="calculate-btn">Hesapla</button>
+
+        <p id="message" class="message"></p>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <span class="result-label">Toplam Bahşiş</span>
+            <span id="tip-total" class="result-value">₺0.00</span>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Toplam Ödeme</span>
+            <span id="total-amount" class="result-value">₺0.00</span>
+          </div>
+
+          <div class="result-card wide">
+            <span class="result-label">Kişi Başı Ödeme</span>
+            <span id="per-person" class="result-value">₺0.00</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

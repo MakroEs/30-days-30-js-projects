@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 25 - Image Zoom</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 25 - Image Zoom 🔍</h1>
+      <p class="subtitle">
+        Görselin üzerine geldiğinde, sağ tarafta detaylı zoom önizlemesini gör.
+      </p>
+
+      <div class="card">
+        <div class="image-wrapper">
+          <img
+            src="./assets/product.jpg"
+            alt="Ürün Görseli"
+            id="image"
+            class="main-image"
+          />
+          <div id="lens" class="lens"></div>
+        </div>
+
+        <div class="zoom-result" id="zoom-result"></div>
+      </div>
+
+      <p class="hint">
+        İpucu: Bu yapı, e-ticaret ürün sayfalarındaki zoom özelliğinin basit bir
+        versiyonudur.
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

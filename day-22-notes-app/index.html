@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 22 - Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 22 - Not Defteri 📝</h1>
+
+      <div class="card">
+        <div class="input-group">
+          <label for="note-title">Not Başlığı</label>
+          <input
+            type="text"
+            id="note-title"
+            placeholder="Örn: Alışveriş Listesi"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="note-text">Not İçeriği</label>
+          <textarea
+            id="note-text"
+            rows="4"
+            placeholder="Notunu buraya yaz..."
+          ></textarea>
+        </div>
+
+        <button id="add-note-btn" class="add-btn">Not Ekle</button>
+
+        <p id="message" class="message"></p>
+
+        <div id="notes-list" class="notes-list"></div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #ec4899, #020617);
+  color: #e5e7eb;
+}
+
+.container {
+  width: 420px;
+  max-width: 95vw;
+  background: rgba(15, 23, 42, 0.96);
+  padding: 24px 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: 0.15s ease;
+}
+
+input::placeholder {
+  color: #64748b;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+/* Hata / Başarı durumları */
+input.error {
+  border-color: #f97373;
+}
+
+input.success {
+  border-color: #22c55e;
+}
+
+.error-message {
+  font-size: 12px;
+  min-height: 16px;
+  color: #fca5a5;
+}
+
+.password-strength {
+  font-size: 12px;
+  color: #a5b4fc;
+}
+
+.submit-btn {
+  margin-top: 6px;
+  padding: 9px 0;
+  border-radius: 10px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.submit-btn:hover {
+  background: #16a34a;
+}
+
+.form-message {
+  margin-top: 8px;
+  font-size: 13px;
+  min-height: 18px;
+  text-align: center;
+}

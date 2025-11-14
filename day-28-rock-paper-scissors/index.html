@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 28 - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 28 - Taş Kağıt Makas✊📄✂️</h1>
+      <p class="subtitle">
+        Taş, kağıt, makas oyununda bilgisayara karşı oyna. Skoru gerçek zamanlı
+        takip et.
+      </p>
+
+      <div class="card">
+        <div class="scoreboard">
+          <div class="score-item">
+            <span class="score-label">Sen</span>
+            <span id="player-score" class="score-value">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Berabere</span>
+            <span id="draw-score" class="score-value">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Bilgisayar</span>
+            <span id="computer-score" class="score-value">0</span>
+          </div>
+        </div>
+
+        <!-- Seçim Butonları -->
+        <div class="choices">
+          <button class="choice-btn" data-choice="rock">
+            <span class="emoji">✊</span>
+            <span class="text">Taş</span>
+          </button>
+          <button class="choice-btn" data-choice="paper">
+            <span class="emoji">📄</span>
+            <span class="text">Kağıt</span>
+          </button>
+          <button class="choice-btn" data-choice="scissors">
+            <span class="emoji">✂️</span>
+            <span class="text">Makas</span>
+          </button>
+        </div>
+
+        <!-- Sonuç Alanı -->
+        <div class="result-panel">
+          <div class="last-moves">
+            <div class="move">
+              <span class="move-label">Senin Seçimin</span>
+              <span id="player-move" class="move-value">-</span>
+            </div>
+            <div class="move">
+              <span class="move-label">Bilgisayarın Seçimi</span>
+              <span id="computer-move" class="move-value">-</span>
+            </div>
+          </div>
+
+          <p id="result-text" class="result-text">
+            Haydi başlamak için bir seçim yap! 👇
+          </p>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">Skoru Sıfırla</button>
+      </div>
+
+      <p class="hint">
+        İpucu: Klavyeden <strong>R</strong> (rock), <strong>P</strong> (paper),
+        <strong>S</strong> (scissors) tuşlarıyla da seçim yapabilirsin.
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

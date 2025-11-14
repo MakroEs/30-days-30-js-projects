@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 19 - Yaş Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 19 - Yaş Hesaplayıcı ⏳</h1>
+
+      <div class="card">
+        <div class="input-group">
+          <label for="birth-date">Doğum Tarihi</label>
+          <input type="date" id="birth-date" />
+        </div>
+
+        <button id="calculate-btn" class="calculate-btn">Hesapla</button>
+
+        <p id="message" class="message"></p>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <span class="result-label">Yıl</span>
+            <span id="years" class="result-value">0</span>
+          </div>
+
+          <div class="result-card">
+            <span class="result-label">Ay</span>
+            <span id="months" class="result-value">0</span>
+          </div>
+
+          <div class="result-card wide">
+            <span class="result-label">Gün</span>
+            <span id="days" class="result-value">0</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

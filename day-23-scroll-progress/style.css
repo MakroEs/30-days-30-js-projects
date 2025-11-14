@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #22c55e, #020617);
+  color: #e5e7eb;
+}
+
+.progress-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(15, 23, 42, 0.9);
+  z-index: 50;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  transition: width 0.08s ease-out;
+}
+
+.container {
+  max-width: 780px;
+  margin: 40px auto 80px;
+  padding: 24px 26px;
+  background: rgba(15, 23, 42, 0.97);
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  line-height: 1.7;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: none;
+  background: #16a34a;
+  color: #020617;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: none; /* JS ile gösterilecek */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+  opacity: 0;
+}
+
+.back-to-top.show {
+  display: flex;
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  background: #22c55e;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin: 30px 10px 70px;
+    padding: 18px 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}

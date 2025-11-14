@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #a855f7, #020617);
+  color: #e5e7eb;
+}
+
+.container {
+  width: 480px;
+  max-width: 95vw;
+  background: rgba(15, 23, 42, 0.97);
+  padding: 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+.card {
+  background: #020617;
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.quote-category {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.7);
+  color: #e9d5ff;
+}
+
+.quote-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.quote-author {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 0;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.btn.primary {
+  background: #8b5cf6;
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  background: #7c3aed;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #e5e7eb;
+  border: 1px solid #475569;
+}
+
+.btn.ghost:hover {
+  background: #0f172a;
+}
+
+.message {
+  font-size: 12px;
+  min-height: 16px;
+  margin-top: 4px;
+  color: #4ade80;
+}

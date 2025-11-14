@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 15 - Form Doğrulama</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 15 - Form Doğrulama 📝</h1>
+
+      <form id="signup-form" class="form">
+        <div class="form-group">
+          <label for="username">Kullanıcı Adı</label>
+          <input type="text" id="username" placeholder="En az 3 karakter" />
+          <p class="error-message" id="username-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-posta</label>
+          <input type="email" id="email" placeholder="ornek@mail.com" />
+          <p class="error-message" id="email-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Şifre</label>
+          <input type="password" id="password" placeholder="En az 6 karakter" />
+          <p class="error-message" id="password-error"></p>
+          <p class="password-strength" id="password-strength">Şifre gücü: -</p>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Şifre Tekrar</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Şifre ile aynı olmalı"
+          />
+          <p class="error-message" id="confirm-password-error"></p>
+        </div>
+
+        <button type="submit" class="submit-btn">Kaydol</button>
+
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

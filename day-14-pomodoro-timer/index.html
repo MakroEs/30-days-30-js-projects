@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 14 - Pomodoro Zamanlayıcı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 14 - Pomodoro Zamanlayıcı ⏳</h1>
+
+      <div class="timer-box">
+        <div class="mode-switch">
+          <button class="mode-btn active" data-mode="work" data-minutes="25">
+            Çalışma (25 dk)
+          </button>
+          <button class="mode-btn" data-mode="break" data-minutes="5">
+            Mola (5 dk)
+          </button>
+        </div>
+
+        <div id="time-display" class="time-display">25:00</div>
+
+        <div class="controls">
+          <button id="start-pause-btn" class="control-btn primary">
+            Başlat
+          </button>
+          <button id="reset-btn" class="control-btn secondary">Sıfırla</button>
+        </div>
+
+        <p id="status-text" class="status-text">
+          Hazırsan “Başlat”a tıkla ve odaklan.
+        </p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

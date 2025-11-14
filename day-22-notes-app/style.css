@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #fbbf24, #020617);
+  color: #e5e7eb;
+}
+
+.container {
+  width: 480px;
+  max-width: 95vw;
+  background: rgba(15, 23, 42, 0.97);
+  padding: 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #fbbf24;
+}
+
+.add-btn {
+  margin-top: 4px;
+  padding: 9px 0;
+  border-radius: 10px;
+  border: none;
+  background: #facc15;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.add-btn:hover {
+  background: #fbbf24;
+}
+
+.message {
+  font-size: 13px;
+  min-height: 18px;
+  color: #fca5a5;
+}
+
+.notes-list {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+/* Scrollbar hafif */
+
+.notes-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notes-list::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+.notes-list::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 999px;
+}
+
+.note-card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.note-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #facc15;
+}
+
+.note-date {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.note-text {
+  font-size: 13px;
+  color: #e5e7eb;
+  margin-top: 2px;
+  white-space: pre-wrap;
+}
+
+.note-actions {
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.note-btn {
+  border: none;
+  border-radius: 8px;
+  font-size: 11px;
+  padding: 4px 8px;
+  cursor: pointer;
+  background: #1e293b;
+  color: #e5e7eb;
+  transition: 0.15s ease;
+}
+
+.note-btn.delete {
+  background: #ef4444;
+}
+
+.note-btn.delete:hover {
+  background: #dc2626;
+}
+
+.note-btn:hover:not(.delete) {
+  background: #0f172a;
+}

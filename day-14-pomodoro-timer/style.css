@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #f97316, #020617);
+  color: #e5e7eb;
+}
+
+.container {
+  width: 420px;
+  max-width: 95vw;
+  background: rgba(15, 23, 42, 0.96);
+  padding: 24px 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mode-switch {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.mode-btn:hover {
+  background: #111827;
+}
+
+.mode-btn.active {
+  background: #f97316;
+  border-color: #f97316;
+  color: #111827;
+}
+
+.time-display {
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 6px 0;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.control-btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.15s ease;
+}
+
+.control-btn.primary {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.control-btn.primary:hover {
+  background: #16a34a;
+}
+
+.control-btn.secondary {
+  background: #0f172a;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+}
+
+.control-btn.secondary:hover {
+  background: #111827;
+}
+
+.status-text {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #cbd5f5;
+  min-height: 20px;
+}

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #22c55e, #020617);
+  color: #e5e7eb;
+}
+
+.container {
+  width: 420px;
+  max-width: 95vw;
+  background: rgba(15, 23, 42, 0.97);
+  padding: 24px 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 26px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.card.calculator {
+  background: #020617;
+  border-radius: 16px;
+  padding: 14px;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+}
+
+.display {
+  background: #0b1120;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid rgba(30, 64, 175, 0.7);
+}
+
+.previous-operand {
+  font-size: 13px;
+  color: #9ca3af;
+  min-height: 16px;
+}
+
+.current-operand {
+  font-size: 24px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.12s ease, transform 0.05s ease;
+}
+
+.btn:hover {
+  background: #1f2937;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-operator {
+  background: #0f172a;
+  color: #22c55e;
+}
+
+.btn-operator:hover {
+  background: #111827;
+}
+
+.btn-accent {
+  background: #f97316;
+  color: #0f172a;
+}
+
+.btn-accent:hover {
+  background: #ea580c;
+}
+
+.btn-equals {
+  background: #22c55e;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.btn-equals:hover {
+  background: #16a34a;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 18px 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .current-operand {
+    font-size: 22px;
+  }
+}

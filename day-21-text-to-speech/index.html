@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 21 - Text to Speech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 21 - Sesli Metin Okuyucu 🔊</h1>
+
+      <div class="card">
+        <label class="label">Metin Gir</label>
+        <textarea
+          id="text-input"
+          placeholder="Sesli okumak için bir metin yaz..."
+        ></textarea>
+
+        <div class="controls">
+          <div class="control-row">
+            <label>Hız</label>
+            <input
+              type="range"
+              id="rate"
+              min="0.5"
+              max="2"
+              step="0.1"
+              value="1"
+            />
+            <span id="rate-value">1</span>
+          </div>
+
+          <div class="control-row">
+            <label>Pitch</label>
+            <input
+              type="range"
+              id="pitch"
+              min="0"
+              max="2"
+              step="0.1"
+              value="1"
+            />
+            <span id="pitch-value">1</span>
+          </div>
+        </div>
+
+        <button id="speak-btn" class="speak-btn">Oku</button>
+
+        <p id="message" class="message"></p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

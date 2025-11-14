@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gün 30 - Yazma Hızı Testi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Gün 30 - Yazma Hızı Testi ⌨️⚡</h1>
+      <p class="subtitle">
+        Verilen metni 30 saniye içinde olabildiğince hızlı ve doğru yaz.
+      </p>
+
+      <div class="card">
+        <div class="top-info">
+          <div class="info-item">
+            <span class="info-label">Süre</span>
+            <span id="time-left" class="info-value">30</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Kelime/Dk (WPM)</span>
+            <span id="wpm" class="info-value">0</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Doğruluk</span>
+            <span id="accuracy" class="info-value">0%</span>
+          </div>
+        </div>
+
+        <div class="text-block">
+          <p id="target-text" class="target-text"></p>
+        </div>
+
+        <textarea
+          id="input-area"
+          class="input-area"
+          placeholder="Test başladığında buraya yazmaya başla..."
+          disabled
+        ></textarea>
+
+        <div class="actions">
+          <button id="start-btn" class="btn primary">Başlat</button>
+          <button id="reset-btn" class="btn secondary">Sıfırla</button>
+        </div>
+
+        <p id="message" class="message">
+          Başlamak için "Başlat" butonuna tıkla.
+        </p>
+      </div>
+
+      <p class="hint">
+        İpucu: Süre başlamadan yazamazsın. Test bittiğinde sonuçlar otomatik
+        hesaplanır.
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
